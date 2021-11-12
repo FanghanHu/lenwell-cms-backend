@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "Location",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "partnered": {
+      "type": "boolean"
+    },
+    "sale": {
+      "via": "locations",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "messages": {
+      "via": "location",
+      "collection": "message"
+    }
+  }
+}
