@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "sender": {
+      "via": "messages",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "messages"
+      "model": "user"
     },
     "location": {
       "model": "location",
