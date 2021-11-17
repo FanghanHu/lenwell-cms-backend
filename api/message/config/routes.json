@@ -29,7 +29,7 @@
       "path": "/messages",
       "handler": "message.create",
       "config": {
-        "policies": []
+        "policies": ["broadcast"]
       }
     },
     {

@@ -10,4 +10,21 @@
  * See more details here: https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations.html#bootstrap
  */
 
-module.exports = () => {};
+
+
+module.exports = () => {
+    const io = require('socket.io')(strapi.server, {
+        cors: {
+            origin: process.env.FRONTEND_URL,
+            methods: ['GET', 'POST']
+        }
+    });
+
+    //expose io so it can be used everywhere
+    strapi.io = io;
+
+    io.on('connection', socket => {
+        //console.log(socket);
+    })
+
+};
