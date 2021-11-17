@@ -12,7 +12,10 @@ module.exports = ({ env }) => ({
         password: env('DATABASE_PASSWORD', 'lenwell599'),
         ssl: env.bool('DATABASE_SSL', true),
       },
-      options: {}
+      options: {pool: {
+        min: 0,
+        max: 8
+      }}
     },
   },
 });
