@@ -18,8 +18,8 @@
       "model": "user"
     },
     "location": {
-      "model": "location",
-      "via": "messages"
+      "via": "messages",
+      "model": "location"
     },
     "text": {
       "type": "richtext"

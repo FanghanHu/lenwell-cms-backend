@@ -89,6 +89,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "isAdmin": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

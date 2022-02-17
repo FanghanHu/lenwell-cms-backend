@@ -38,6 +38,9 @@
     "messages": {
       "via": "location",
       "collection": "message"
+    },
+    "display_name": {
+      "type": "string"
     }
   }
 }
