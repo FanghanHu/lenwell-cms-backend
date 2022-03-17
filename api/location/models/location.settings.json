@@ -41,6 +41,9 @@
     },
     "display_name": {
       "type": "string"
+    },
+    "last_visited_time": {
+      "type": "date"
     }
   }
 }
